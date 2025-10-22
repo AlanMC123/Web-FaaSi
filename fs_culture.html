@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>深圳花市网丨文化</title>
+        <style>
+            @import url("index_style.css");
+        </style>
+	</head>
+	
+	<!-- 导航栏 -->
+    <header>
+		<div class="container">
+        	<div class="container" id="logo" style="margin-left: 0rem; " onClick="window.location.href='index.html'">
+				<img src="pictures/index/flower.png" alt="231820024 陳皓麟" id="flower">
+                <p id="fs-net">深圳花市网</p>	   
+        	</div>
+			<div class="container" id="navi-container">
+				<a href="fs_history.html" class="navi-text">历史</a>
+				<a href="fs_culture.html" class="navi-text">文化</a>
+				<a href="fs_news.html" class="navi-text">新闻</a>
+				<a href="fs_location.html" class="navi-text">地点</a>
+                <a href="fs_contact.html" class="navi-text">联系我们</a>
+            </div>
+		</div>
+    </header>
+	
+	<body>
+		<!-- 全屏背景 -->
+		<div id="culture-background-setting"></div>
+
+		<!-- 首页 -->
+		<div class="big-container">
+			<div class="white-translucent-flame">
+				<h1 class="culture-black-title">花&nbsp; 市&nbsp; 文&nbsp; 化</h1>
+				<div class="center-container" style="width:50%">
+					<div id="culture-image-container">
+						<img src="pictures/culture/faasi.png" class="opaque-flame-picture" alt="花市历史">
+					</div>
+				</div>
+				<div class="two-button-container">
+					<div></div><div></div>
+					<div class="translucent-flame-button" onClick="window.location.href='#video-part'" style="background-color:rgba(255,205,130,1.00)">
+						<p class="beautiful-button-text"> 发 财 密 码 </p>
+					</div>
+					<div class="translucent-flame-button" onClick="window.location.href='#traits'" style="background-color:rgba(255,205,130,1.00)">
+						<p class="beautiful-button-text"> 花 卉 特 色 </p>
+					</div>
+					<div></div><div></div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- 视频展示 -->
+		<div class="big-container" id="video-part">
+			<div class="black-translucent-flame">
+				<div class="contanier" style="margin-top: 0rem">
+					<h1 class="culture-white-title">发&nbsp; 财&nbsp; 密&nbsp; 码</h1>
+				</div>
+				<iframe src="https://player.bilibili.com/player.html?isOutside=true&aid=113866562412042&bvid=BV1kiwaexEC7&cid=27998290350&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="50%" height="530px" style="margin: 0 0 2rem 0;"></iframe>
+				<div class="container">
+					<div></div>
+					<div class="translucent-flame-button" onClick="window.location.href='#traits'" style="margin-bottom: 2rem; width:400px">
+						<p class="beautiful-button-text"> 花 卉 特 色 </p>
+					</div>
+					<div></div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- 花卉介绍 -->
+		<div class="big-container" id="traits">
+			<div class="white-translucent-flame">
+				<div class="contanier" style="margin-top: 0rem">
+					<h1 class="culture-black-title">花&nbsp; 卉&nbsp; 特&nbsp; 色</h1>
+				</div>
+				<div class="center-container">
+					<h2>花卉种类： </h2>
+					<select id="selector" onChange="selectPlant()">
+						<option value="plant01.html">金桔</option>
+						<option value="plant02.html">富贵竹</option>
+						<option value="plant03.html">水仙花</option>
+					</select>
+				</div>
+			  	<iframe src="plant01.html" width="50%" height="560px" scrolling="yes" sandbox="allow-scripts allow-same-origin allow-forms" style="margin: 0 0 2rem 0;" id="showcase"></iframe>
+		  </div>
+		</div>
+		
+		<!-- 选择花卉种类的函数 -->
+		<script>
+			function selectPlant() {
+				const select = document.getElementById("selector");
+    			const url = select.value;
+    			const showcase = document.getElementById("showcase");
+				showcase.src = url
+			}
+		</script>
+		
+		<!-- 尾页 -->
+		<footer>
+			<div id="last-translucent-flame">
+				<br>
+				<p class="last-text">远征舰长Alan</p>
+				<br>
+			</div>
+		</footer>
+	</body>
+	
+	
+</html>

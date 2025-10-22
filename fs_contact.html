@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>深圳花市网丨联系我们</title>
+		<style>
+			@import url("index_style.css");
+		</style>
+	</head>
+	
+	<!-- 导航栏 -->
+    <header>
+		<div class="container">
+        	<div class="container" id="logo" style="margin-left: 0rem; " onClick="window.location.href='index.html'">
+				<img src="pictures/index/flower.png" alt="231820024 陳皓麟" id="flower">
+                <p id="fs-net">深圳花市网</p>	   
+        	</div>
+			<div class="container" id="navi-container">
+				<a href="fs_history.html" class="navi-text">历史</a>
+				<a href="fs_culture.html" class="navi-text">文化</a>
+				<a href="fs_news.html" class="navi-text">新闻</a>
+				<a href="fs_location.html" class="navi-text">地点</a>
+                <a href="fs_contact.html" class="navi-text">联系我们</a>
+            </div>
+		</div>
+    </header>
+	<body>
+		<!-- 全屏背景 -->
+        <div id="background-setting"></div>
+		
+		<!-- 填写联系方式与意见 -->
+		<div class="big-container">
+			<div class="black-translucent-flame">
+				<div class="center-container" style="min-width: 80%">
+					<div id="contact-translucent-flame">
+						<h1>请留下您的联系方式与建议</h1>
+						<br>
+			  			<h3>您的电话/邮箱</h3>
+			  			<input id="tele">
+						<h3>您的建议</h3>
+			  			<textarea id="advice" placeholder="关于深圳花市，我想说......"></textarea><br><br>
+						<button onClick="sendEmail()">一键发送<br>
+						</button>
+            		</div>
+				</div>
+			</div>
+        </div>
+		
+		<!-- 自动提交函数 -->
+		<script>
+			function sendEmail() {
+  				const tele = document.getElementById('tele').value;
+  				const advice = document.getElementById('advice').value;
+  				window.location.href = `mailto:kancho_ac@163.com?subject=深圳花市网用户反馈&body=联系方式：${encodeURIComponent(tele)}%0A${encodeURIComponent(advice)}`;
+			}
+		</script>
+		
+		<!-- 尾页 -->
+		<footer>
+			<div id="last-translucent-flame">
+				<br>
+				<p class="last-text">远征舰长Alan</p>
+				<br>
+			</div>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>深圳花市网丨文化</title>
+        <style>
+            @import url("index_style.css");
+        </style>
+	</head>
+	
+	<!-- 导航栏 -->
+    <header>
+		<div class="container">
+        	<div class="container" id="logo" style="margin-left: 0rem; " onClick="window.location.href='index.html'">
+				<img src="pictures/index/flower.png" alt="231820024 陳皓麟" id="flower">
+                <p id="fs-net">深圳花市网</p>	   
+        	</div>
+			<div class="container" id="navi-container">
+				<a href="fs_history.html" class="navi-text">历史</a>
+				<a href="fs_culture.html" class="navi-text">文化</a>
+				<a href="fs_news.html" class="navi-text">新闻</a>
+				<a href="fs_location.html" class="navi-text">地点</a>
+                <a href="fs_contact.html" class="navi-text">联系我们</a>
+            </div>
+		</div>
+    </header>
+	
+	<body>
+		<!-- 全屏背景 -->
+		<div id="history-background-setting"></div>
+		
+		<!-- 历史介绍 -->
+		<div class="big-container">
+			<div class="black-translucent-flame" style="justify-content: flex-start" id="choices">
+				
+				<h1 id="history-title">广 东 花 市 历 史</h1>
+				<div id="main-part">
+					<div class="center-container">
+						<div class="image-container" style="width:80%" id="histroy-picture">
+							<img class="opaque-flame-picture" src="pictures/history/three.png" alt="古代、近代、现代">
+						</div>
+					</div>
+					<br><br>
+					<div class="center-container">
+						<div class="translucent-flame-button" onClick="showHistory(part1)">
+							<p class="beautiful-button-text">古 代</p>
+						</div>
+						<div class="translucent-flame-button" onClick="showHistory(part2)">
+							<p class="beautiful-button-text">近 代</p>
+						</div>
+						<div class="translucent-flame-button" onClick="showHistory(part3)">
+							<p class="beautiful-button-text">现 代</p>
+						</div>
+					</div>
+					<br>
+				</div>
+				<br>
+				<div class="selectable-frame" id="part1">
+					<h1 style="text-align: center">古 代</h1>
+					<ul>
+						<li>
+							<h3>唐朝</h3>
+							<p>广府民间已经有专门栽培以供贺年的年桔。</p>
+						</li>
+						<li>
+							<h3>五代十国南汉</h3>
+							<p>广州城外河南（今广州市海珠区）的农民以种花为业，向城内居民售卖鲜花。</p>
+						</li>
+						<li>
+							<h3>南宋</h3>
+							<p>王栐《燕翼贻谋录》：“承平时，温州、鼎州、广州皆贡柑子。”</p>
+						</li>
+						<li>
+							<h3>明朝</h3>
+							<p>柑橘业已发展至商品生产时代，年桔在芳村、番禺、南海等地均有种植。</p>
+							<p>广州芳村的花棣（今花地）已成为花木产区，搭起一排排展卖鲜花鲜果及年宵用品的竹棚，人们称之为“花街”。</p>
+						</li>
+						<li>
+							<h3>清朝</h3>
+							<p>藩署前（今广东省财政厅前）出现夜间花市。</p>
+						</li>
+						
+					</ul>
+					<br>
+					<div class="center-container">
+						<div class="translucent-flame-button" onClick="goBack()">
+							<p class="beautiful-button-text">返 回</p>
+						</div>
+					</div>
+					<br>
+				</div>
+				<div class="selectable-frame" id="part2">
+					<h1 style="text-align: center">近 代</h1>
+					<ul>
+						<li>
+							<h3>同治、光绪年间</h3>
+							<p>19世纪60年代渐成年宵花市，固定在春节前几天举行。当时广州城内有两个花市，一个在双门底（今北京路），另一个在西关十八甫。</p>
+						</li>
+						<li>
+							<h3>20世纪20年代</h3>
+							<div class="history-image-container">
+								<img src="pictures/history/jindai-1.png" alt="民国花市" class="opaque-flame-picture">
+							</div>
+							<p>行花街迎春祈福的习俗基本成形，“未行过花街不算过年” 的说法在坊间广为流传。</p>
+							<p>商家们不仅在花市中售卖花卉，还会搭配销售各种与春节相关的商品，如精美的中国结、寓意吉祥的春联、喜庆的红灯笼等，形成了一个综合性的春节购物与游乐场所。</p>
+						</li>
+						<li>
+							<h3>20世纪30年代</h3>
+							<div class="history-image-container">
+								<img src="pictures/history/jindai-2.png" alt="民国花市" class="opaque-flame-picture">
+							</div>
+							<p>除夕花市上，桃花、水仙、牡丹、剑兰最为普遍，当时的报刊报道，一株中等桃花可卖数银元，足以维持普通人家一个月的生活。若有上好品质的花上市，还可以运到香港卖出高价。</p>
+							<p>抗日战争时期，广州花市未有停歇。1938年的除夕，在敌机空袭警报声中，广州市民仍在挑选桃花，表达了对驱除日寇、盼望胜利的期待。</p>
+						</li>
+					</ul>
+					<br>
+					<div class="center-container">
+						<div class="translucent-flame-button" onClick="goBack()">
+							<p class="beautiful-button-text">返 回</p>
+						</div>
+					</div>
+					<br>
+				</div>
+				<div class="selectable-frame" id="part3">
+					<h1 style="text-align: center">现 代</h1>
+					<ul>
+						<li>
+							<h3>20世纪50年代</h3>
+							<p>传统的除夕花市改称为迎春花市。</p>
+						</li>
+						<li>
+							<h3>1982年</h3>
+							<p>深圳市第一届迎春花市在新园路举行。当时花市主要是为了丰富市民和港澳台同胞及归侨的节日生活，同时宣传改革开放政策和深圳经济特区建设取得的成就。</p>
+						</li>
+						<li>
+							<h3>1986年</h3>
+							<p>深圳市迎春花市开始由罗湖区承办，建设路、工人文化宫、滨河东路、嘉宾路、人民南路、东门南路等地先后成为花市的举办地</p>
+						</li>
+						<li>
+							<h3>1998年</h3>
+							<div class="history-image-container">
+								<img src="pictures/history/xiandai-1.png" alt="现代花市" class="opaque-flame-picture">
+							</div>
+							<p>经过考察，深圳迎春花市选址在爱国路，这里道路宽阔，花市铺位从原来的 200 个增加到 1000 多个。此后，爱国路成为深圳迎春花市的固定举办地，花市规模不断扩大，影响力逐年提升。</p>
+						</li>
+						<li>
+							<h3>2002年</h3>
+							<p>爱国路以封闭道路的形式举办迎春花市，花卉品种日益丰富，除传统花卉外，还有各种进口花卉和特色植物。</p>
+						</li>
+						<li>
+							<h3>2004年</h3>
+							<p>主办方采取公开拍卖的方式出售花市铺位使用权，既解决了花农争抢铺位的问题，又实现了花市举办自负盈亏，减少了财政负担。</p>
+						</li>
+						<li>
+							<h3>2018年</h3>
+							<p>深圳花市由“一区主办”转为“多点开花”，爱国路花市取消。</p>
+						</li>
+						<li>
+							<h3>2023年</h3>
+							<div class="history-image-container">
+								<img src="pictures/index/location.jpg" alt="现代花市" class="opaque-flame-picture">
+							</div>
+							<p>应广大群众的强烈要求，罗湖区爱国路的迎春花市分会场恢复举办。</p>
+						</li>
+					</ul>
+					<br>
+					<div class="center-container">
+						<div class="translucent-flame-button" onClick="goBack()">
+							<p class="beautiful-button-text">返 回</p>
+						</div>
+					</div>
+					<br>
+				</div>
+			</div>
+		</div>
+		
+		<script>
+			function showHistory(choice) {
+				const part1 = document.getElementById("part1");
+				const part2 = document.getElementById("part2");
+				const part3 = document.getElementById("part3");
+				const mainpart = document.getElementById("main-part")
+				const title = document.getElementById("history-title")
+				part1.style.display = "none";
+				part2.style.display = "none";
+				part3.style.display = "none";
+				mainpart.style.display = "none";
+				title.style.margin = "7rem 0 1rem 0"
+				choice.style.display = "block";
+				
+			}
+		</script>
+		<script>
+			function goBack() {
+				const part1 = document.getElementById("part1");
+				const part2 = document.getElementById("part2");
+				const part3 = document.getElementById("part3");
+				const mainpart = document.getElementById("main-part")
+				const title = document.getElementById("history-title")
+				part1.style.display = "none";
+				part2.style.display = "none";
+				part3.style.display = "none";
+				title.style.margin = "7rem 0 3rem 0"
+				mainpart.style.display = "block";
+				window.location.href = "#choices"
+			}
+		</script>
+		
+		<!-- 尾页 -->
+		<footer>
+			<div id="last-translucent-flame">
+				<br>
+				<p class="last-text">远征舰长Alan</p>
+				<br>
+			</div>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>深圳花市网丨地点</title>
+        <style>
+            @import url("index_style.css");
+        </style>
+    </head>
+
+    <!-- 导航栏 -->
+	<header>
+		<div class="container">
+        	<div class="container" id="logo" style="margin-left: 0rem; " onClick="window.location.href='index.html'">
+				<img src="pictures/index/flower.png" alt="231820024 陳皓麟" id="flower">
+                <p id="fs-net">深圳花市网</p>	   
+        	</div>
+			<div class="container" id="navi-container">
+				<a href="fs_history.html" class="navi-text">历史</a>
+				<a href="fs_culture.html" class="navi-text">文化</a>
+				<a href="fs_news.html" class="navi-text">新闻</a>
+				<a href="fs_location.html" class="navi-text">地点</a>
+                <a href="fs_contact.html" class="navi-text">联系我们</a>
+            </div>
+		</div>
+    </header>
+
+    <body>
+        <!-- 全屏背景 -->
+        <div id="background-setting"></div>
+		
+		<!-- 地图与信息说明 -->
+		<div class="big-container">
+			<div class="black-translucent-flame" style="padding-top: 1rem">
+				<h1 class="location-title" style="margin-top:2rem">深 圳 花 市 地 点</h1>
+				<h3 class="location-subtitle">2 0 2 5</h3>
+			  <table border="0px" id="infotable">
+					<tbody>
+						<tr>
+							<td width="60%" rowspan="2">
+								<svg viewBox="0 0 1900 1070">
+    					<!-- 福田区 -->
+    					<a onClick="showInfo(1)" id="futian-link">
+			        		<polygon class="district" points="700,750,590,720,660,590,730,590,790,630,790,690,700,750" />
+    					</a >
+
+    					<!-- 罗湖区 -->
+			   			<a onClick="showInfo(2)" id="luohu-link">
+       						<polygon class="district" points="730,590,790,630,790,690,960,660,1000,600,960,530,730,590," />
+    					</a >
+
+    					<!-- 南山区 -->
+    					<a onClick="showInfo(3)" id="nanshan-link">
+        					<polygon class="district" points="560,460,370,720,420,870,590,720,660,590,560,460" />
+    					</a >
+
+    					<!-- 盐田区 -->
+    					<a onClick="showInfo(4)" id="yantian-link">
+        					<polygon class="district" points="1020,680,960,660,1000,600,1080,460,1220,520,1240,570,1020,680" />
+    					</a >
+
+    					<!-- 宝安区 -->
+			    		<a onClick="showInfo(5)" id="baoan-link">
+			        		<polygon class="district" points="170,350,410,70,460,120,360,220,400,410,540,340,560,460,370,720,170,350" />
+			    		</a >
+
+    					<!-- 龙岗区 -->
+			    		<a onClick="showInfo(6)" id="longgang-link">
+			        		<polygon class="district" points="760,450,730,590,960,530,1000,600,1080,460,1160,420,1240,250,1230,170,1010,150,930,220,990,280,920,460,810,330,760,450" />
+			    		</a >
+
+    					<!-- 龙华区 -->
+			    		<a onClick="showInfo(7)" id="longhua-link">
+			        		<polygon class="district" points="540,340,560,460,660,590,730,590,760,450,810,330,700,230,630,290,540,340" />
+			    		</a >
+
+    					<!-- 坪山区 -->
+    					<a onClick="showInfo(8)" id="pingshan-link">
+        					<polygon class="district" points="1220,520,1080,460,1160,420,1240,250,1340,230,1380,450,1220,520" />
+    					</a >
+
+    					<!-- 光明区 -->
+    					<a onClick="showInfo(9)" id="guangming-link">
+        					<polygon class="district" points="460,120,360,220,400,410,540,340,630,290,570,160,460,120" />
+    					</a >
+
+    					<!-- 大鹏新区 -->
+    					<a onClick="showInfo(10)" id="dapeng-link">
+       						<polygon class="district" points="1220,520,1240,570,1390,610,1500,860,1730,740,1530,600,1680,460,1380,450,1220,520" />
+    					</a >
+					</svg>
+							</td>
+							<th height="20%" style="max-height: 400px; overflow: auto">
+								<h2 id="location-table-title">点击行政区查看花市信息</h2>
+							</th>
+						</tr>
+						<tr>
+							<td>
+								<h4 class="location-table-text">地点：</h4>
+								<p class="location-table-text" id="location">&nbsp; </p>
+								<h4 class="location-table-text">交通：</h4>
+								<p class="location-table-text" id="traffic">&nbsp; </p>
+								<h4 class="location-table-text">时间：</h4>
+								<p class="location-table-text" id="time">&nbsp; </p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>	
+		</div>
+		
+		<!-- 地点选择函数 -->
+		<script>
+			function showInfo(district) {
+				if (district == 1) {
+					document.getElementById("location").textContent = "福田区节日大道节日广场(卓悦中心·天元中央大街)"
+					document.getElementById("traffic").textContent = "地铁1号线或10号线至岗厦站，后步行前往；自驾可导航至卓越中心停车场"
+					document.getElementById("time").textContent = "1月22日~1月28日"
+				}
+				else if (district == 2) {
+					document.getElementById("location").textContent = "罗湖区爱国路(华丽路路口至怡景路路口区间）"
+					document.getElementById("traffic").textContent = "地铁3号线翠竹站B2口或5号线怡景站D口，后步行前往"
+					document.getElementById("time").textContent = "1月22日-1月28日"
+				}
+				else if (district == 3) {
+					document.getElementById("location").textContent = "南山区月亮湾大道3008号荷兰花卉小镇"
+					document.getElementById("traffic").textContent = "地铁1号线大新站B口或12号线中山公园站D口，后步行前往"
+					document.getElementById("time").textContent = "1月22日-1月28日"
+				}
+				else if (district == 4) {
+					document.getElementById("location").textContent = "盐田区海山街道海景路盐田中央公园段"
+					document.getElementById("traffic").textContent = "地铁2号线或8号线海山站A1口，后步行前往；自驾可停车至壹海城ONE MALL"
+					document.getElementById("time").textContent = "1月22日-1月28日"
+				}
+				else if (district == 5) {
+					document.getElementById("location").textContent = "宝安区创业二路与扬田路交叉口东40米啤酒小镇内部"
+					document.getElementById("traffic").textContent = "地铁5号线兴东地铁站B口，后步行前往。"
+					document.getElementById("time").textContent = "1月22日-1月28日"
+				}
+				else if (district == 6) {
+					document.getElementById("location").textContent = "龙岗区龙翔大道3001号大运中心"
+					document.getElementById("traffic").textContent = "地铁16号线大运中心站D口，后步行前往。"
+					document.getElementById("time").textContent = "1月22日-1月28日"
+				}
+				else if (district == 7) {
+					document.getElementById("location").textContent = "龙华区龙华大道4321号龙华文体中心"
+					document.getElementById("traffic").textContent = "地铁4号线至清湖A2口，转乘有轨电车至清龙站，后步行前往。"
+					document.getElementById("time").textContent = "1月22日-1月28日"
+				}
+				else if (district == 8) {
+					document.getElementById("location").textContent = "坪山区行政八路与坪山大道交叉路口北侧坪山中心公园"
+					document.getElementById("traffic").textContent = "地铁14号线坪山中心站C口，后步行前往"
+					document.getElementById("time").textContent = "1月22日-1月28日"
+				}
+				else if (district == 9) {
+					document.getElementById("location").textContent = "光明区马田街道松白路4699号大仟里购物中心"
+					document.getElementById("traffic").textContent = "地铁6号线至公明广场A口，后步行前往"
+					document.getElementById("time").textContent = "1月22日-1月28日"
+				}
+				else if (district == 10) {
+					document.getElementById("location").textContent = "大鹏新区南澳街道月亮湾广场"
+					document.getElementById("traffic").textContent = "地铁2号线至莲塘口岸D口，到广岭公交站乘坐E11号公交至上下企沙站，后步行前往。"
+					document.getElementById("time").textContent = "1月22日-1月28日"
+				}
+			}
+		</script>
+		
+		<!-- 尾页 -->
+		<footer>
+			<div id="last-translucent-flame">
+				<br>
+				<p class="last-text">远征舰长Alan</p>
+				<br>
+			</div>
+		</footer>
+    </body>
+</html>
